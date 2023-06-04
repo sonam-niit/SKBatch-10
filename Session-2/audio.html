@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Audio demo</title>
+</head>
+<body>
+    <h2>Audio Demo</h2>
+    <audio src="audiofiles/song.mp3" controls autoplay loop muted>
+    </audio>
+    <!--here it will just include the src file and play in browser-->
+
+    <!-- source tag is used when you have multiple file formats available for audio file-->
+    <!--it will check the first source if its not supported in browser then take the next source-->
+    <audio controls autoplay loop>
+        <source  src="audiofiles/song.mp3">
+        <source  src="audiofiles/song.ogg">
+        <source  src="audiofiles/song.mp4">
+    </audio>
+</body>
+</html>
