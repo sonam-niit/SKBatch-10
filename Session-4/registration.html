@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <h2>Personal Details</h2>
+    <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="John" required>
+        &nbsp;&nbsp;&nbsp;
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Doe" required>
+        &nbsp;&nbsp;&nbsp;
+        <label for="uname">User Name:</label>
+        <input type="text" id="uname" name="uname" placeholder="@johndoe" required>
+
+        <br><br>
+        <label for="email">EmailID:</label>
+        <input type="email" id="email" name="email" placeholder="john.doe@gmail.com" required>
+        <br><br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="male">Male
+        <input type="radio" name="gender" id="gender" value="female">Female
+        <input type="radio" name="gender" id="gender" value="other">Other
+        <br><br>
+        <label for="profile">Upload Profile Picture</label>
+        <input type="file" name="profile" id="profile">
+        <br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        <label for="lang">Languages Which you can Speak?</label>
+        <input type="checkbox" name="lang" id="lang" value="hindi">Hindi
+        <input type="checkbox" name="lang" id="lang" value="eng">English
+        <input type="checkbox" name="lang" id="lang" value="marathi">Marathi
+        <br><br>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="in">India</option>
+            <option value="us">US</option>
+            <option value="uk">UK</option>
+            <option value="aus">Australia</option>
+            <option value="can">Canada</option>
+        </select>
+        <br><br>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="982345678" required>
+        <br><br>
+        <label for="pwd">Password</label>
+        <input type="password" name="pwd" id="pwd" placeholder="*************" required minlength="8"><br><br>
+        <br><br>
+
+        <a href="edu.html">Next</a>
+        <input type="reset" value="Reset Me..!!">
+    
+    </form>
+</body>
+</html>
