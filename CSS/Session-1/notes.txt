@@ -1,0 +1,49 @@
+CSS
+-----------------
+Styling Language
+
+3 types of CSS
+
+Internal CSS
+----------------
+-which includes CSS only for a page.
+
+-to include use <style> tag in html <head> tag and write your CSS Logics.
+
+External CSS
+------------------
+
+Why?
+
+if we want to apply same CSS to multiple HTML pages we should create a a sepearte file for CSS with th extention .css
+
+for e.g. styles.css
+
+inside this file you can directly write your CSS code.
+
+To include this css file in your HTML page use <link> tag
+
+attributes
+1. href: link of stylesheet
+2. rel: stylesheet (if you will not write this than css will not work)
+3. type: text/css (this is not complsary in HTML5)
+
+
+inline CSS
+----------------------
+Write a css for a perticular element in a line thats why its called as inline css.
+
+if you write inline CSS then use style attribute of any tag.
+
+<h1 style="background-color: lightgreen;">this is my another Heading</h1>
+
+
+
+
+
+
+
+
+
+
+
