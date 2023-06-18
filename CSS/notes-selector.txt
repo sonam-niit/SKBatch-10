@@ -1,0 +1,73 @@
+Selectors
+--------------------
+we can select the element based on the selector and on that element we can apply styling.
+
+1. Type Selector
+----------------------------
+
+select type(element) of the element and apply css in it.
+
+h1,h2,p,img,table,li,ul
+
+syntax
+--------------
+
+selector{
+	//styling property and its value
+}
+
+h1{
+	color:"red"
+}
+
+here h1 is called as selector.
+
+2. Id Selector
+-------------------------------
+if you want give a unique css to a perticular tag then use id selector which always starts with # name you can give anything
+
+#banner{
+	height:500px
+	width:100%
+}
+
+to use it in element use id attribute
+
+<div id="banner">
+or
+<img id="banner">
+
+
+3. class selector
+------------------------
+to give the same CSS to multiple elements
+
+create class using . 
+name you can give anything
+
+to use it in element use class attrubute and give the name your selector
+
+.test{
+	color:blue
+}
+
+<div class="test"></div>
+
+4. Group Selector
+----------------------------
+
+same css you want to apply on multiple elements.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

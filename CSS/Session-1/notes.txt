@@ -39,7 +39,9 @@ if you write inline CSS then use style attribute of any tag.
 
 
 
+Note: Inline CSS is having highest priority means it will override internal CSS and it will also override external CSS.
 
+For internal and external CSS prority just understand what css you apply last will override th previously included CSS.
 
 
 

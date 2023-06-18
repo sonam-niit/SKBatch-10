@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div~p{
+            background-color: chocolate;
+            color: white;
+            font-size: 20px;
+        }
+        /* div ~ p means all siblings p tag of div tag */
+        /* div>p means apply css only on own child not grand childs */
+        /* div p means apply css gto all child p tags of div tag */
+        /* div + p means it will apply the CSS on first siblings of Div tag */
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is My Para1</p>
+
+        <p>This is My Para2</p>
+
+        <section>
+            <p>This is My Child Para1 of Inner Div</p>
+
+            <p>This is My Child Para1 of Inner Div</p>
+        </section>
+    </div>
+
+    <p>This is My Outer Side Para</p>
+    
+    <p>This is My Outer Side Para2</p>
+</body>
+</html>
