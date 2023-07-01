@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+        }
+        .header{
+            grid-column: 1/4;
+            height: 100px;
+            background-color: palegreen;
+        }
+        .sidebar{
+            height: 400px;
+            background-color: blue;
+        }
+        .main{
+            height: 400px;
+            background-color: palevioletred;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap:5px
+        }
+        .main div{
+            margin: 5px;
+            height: 150px;
+            background-color: rgb(14, 235, 117);
+        }
+        .right{
+            height: 400px;
+            background-color: rgb(240, 154, 210);
+        }
+        .footer{
+            grid-column: 1/4;
+            height: 100px;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+
+        </div>
+        <div class="sidebar">
+
+        </div>
+        <div class="main">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="right"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
