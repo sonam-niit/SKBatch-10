@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            /* border: 2px black solid;
+            background-color: black; */
+            color: white;
+            position: relative;
+            animation: shifting 5s infinite;
+        }
+        .div1{
+            animation-timing-function: linear;
+        }
+        .div2{
+            animation-timing-function: ease;
+        }
+        .div3{
+            animation-timing-function: ease-in;
+        }
+        .div4{
+            animation-timing-function: ease-out;
+        }
+        .div5{
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes shifting{
+            from {left:0px}
+            to {left:900px}
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <img src="https://i.pinimg.com/originals/e7/6d/a4/e76da432ac9789ef342cd989f680ec94.gif"
+        height="100" width="100" alt="cartoon">
+    </div>
+    <div class="div2">Ease</div>
+    <div class="div3">Ease In</div>
+    <div class="div4">Ease Out</div>
+    <div class="div5">Ease In Out</div>
+</body>
+</html>

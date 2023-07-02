@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before{
+            transform: scaleX(0);
+            transform-origin: bottom right;
+        }
+        h1::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0; right: 0; left: 0;bottom: 0;
+            inset: 0 0 0 0;
+            background-color: aqua;
+            z-index: -1;
+            transition: transform .4s ease;
+        }
+        h1:hover::before{
+            transform: scaleX(1);
+            transform-origin: bottom right;
+        }
+        h1{
+            position: relative;
+            font-size: 5 rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the World of SKILL ACADEMY</h1>
+</body>
+</html>
