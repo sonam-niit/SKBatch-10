@@ -1,0 +1,71 @@
+//How to give variables name
+
+- name must be a noun, must be some relative name and must be between 0-255 characters.
+
+- name can be the combination of letters(alphabets) and numbers(0-9) alphanumeric
+
+- first letter of a variable name must be a letter it can not be a number
+
+- we can not use some special characters like . , / *, no white spaces.. only 2 characters allowed _(underscore) & $(doller)
+
+- if you give a long name then follow lowerCamelCase
+
+	firstName, lastName, myAdharNumber
+
+	(first word starts with lower case floowed by next word first letter in capital)
+
+how to give values to these variables
+---------------------------------------------
+
+values we can call as literals
+
+firstName= "sonam" //sequence of characters
+
+number1= 45.56
+number2= 67
+
+condition=true
+
+userName=null
+email=undefined
+
+
+=================================================================================
+Variable Declared using var keyword, these variables are having a scope which is function scope.
+
+Means the variables we can use through out that function after that it will destroyed from memory.
+
+We can declare variable also using let and const keywords
+
+these 2 types are having a scope which is called as block scope {}
+we can use them inside those braces only and after that it will be destroyed from the memory.
+
+
+let variable value we can change but const is constant we can not change its value.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
