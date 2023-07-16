@@ -1,0 +1,133 @@
+Operators to operate on Numbers or any other values
+------------------------------------------------------
+
+1. Arithmetic Operator
+----------------------------------
+
+Addition (+)
+
+Subtraction (-)
+
+Multiplication (*)
+
+Division (/)
+
+Modulo Divison (% == Reminder)
+
+Task 1:
+-----------------
+Take input from user for radius
+and calculate circumference (2 * pi * r) and area (pi * r * r)of circle.
+
+Task 2:
+-----------------
+Ask user to enter value for height and width based on that calculate area of rectangle and perimeter of rectangle.
+
+
+Task 3:
+-----------------
+
+WAP to ask user to enter principle Amount, Rate of Intrest, No of Years and calculate Simple Intrest.
+
+I= p * R * N /100;
+
+
+Task 4
+-----------------
+Ask user to enter input in celcius and convert the temprature into feranHit.
+
+
+FeranHit=(celcious *  (9 /5)) + 32
+==========================================================================================
+
+Ternary Operator
+------------------------------------
+
+(condition) ? value : value
+
+========================================================
+3. Comparison or Relational Operator
+-------------------------------------------
+
+< , >, <=, >=,  == , !=, ===, !==
+
+Task1: WAP to check whether the given number is even or odd.
+
+
+-----------------------------------------------------------------------
+
+== and === what is the diffrence.
+
+== its comparing Just values
+
+=== its comparing value + datatype.
+
+------------------------------------------------------------------------------------------
+
+Fix 2 varaibles in your program with uname="admin@admin.com" and pass="admin@123"
+
+Ask user to enter password and if users's pasword will match with this save Pass then show Successfully Logged In else show Wrong Password.
+
+==========================================================================================
+
+Logical Opeartor
+-----------------------
+
+1. Logical Or: ||
+
+2. Logical AND : &&
+
+3. Logical NOT: !
+
+(if both the condition that you want to compare and if both of them are true then only you want to show the result then use AND operator)
+
+if any one of the condiiton is true then we can use or operator.
+
+Compare some multiple values using these and and or.
+
+Task 1:
+-----------------
+Ask user to enter any letter from A-Z
+
+check if the USer is vowel or not?
+
+input=='a' || input=='e' || input=="i"
+============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
