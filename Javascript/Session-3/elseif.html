@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const percentage=prompt("Enter your Percentage");
+        if(percentage>=70 && percentage<=100){
+            document.write("<h1>Congratulations...!! You got Distinction...!!!</h1>")
+        }else if(percentage>=60 && percentage<70){
+            document.write("<h1>Congratulations...!! You got First Class...!!!</h1>")
+        }else if(percentage>=50 && percentage<60){
+            document.write("<h1>Congratulations...!! You got Second Class...!!!</h1>")
+        }else if(percentage>=35 && percentage<50){
+            document.write("<h1>Congratulations...!! You got Pass Class...!!!</h1>")
+        }else if(percentage>=0 && percentage<35){
+            document.write("<h1>Sorry...!! You Failed...!!!</h1>")
+        }else{
+            document.write("<h1>Kindly enter the Marks between 0 to 100 only!!!</h1>")
+        }
+    </script>
+</body>
+</html>

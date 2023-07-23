@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const a = prompt("Enter Any Number")
+        const b = prompt("Enter Any Number")
+        const c = prompt("Enter Any Number")
+
+        if (a==b && a==c) {
+            document.write("The three numbers are equal")
+        } else {
+            if (a > b) {
+                if (a > c) {
+                    document.write(`A ${a} is larger`)
+                } else {
+                    document.write(`C ${c} is larger`)
+                }
+            } else {
+                if (b > c) {
+                    document.write(`B ${b} is larger`)
+                } else {
+                    document.write(`C ${c} is larger`)
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+Functions
+---------------------
+
+A set of finite instructions which is written to execute a specified task called a function.
+
+Function can be divided into 2 parts
+
+1. Inbuilt Functions: which we directly use
+2. User Defined Functions: a function created by user.
+
+we can use the functionality multiple times.
+
+How to create a function
+-------------------------------
+
+function keyword we are using to create functions and then give the name of the function.
+
+function welcome(){
+
+	//block we can write our code.
+}
+
+
+------------------------------------------------------------------------
+EvenDriven Functions: triggered or executed to some specific events or actions from the browser like when user clicks on some button or by pressing some key, or handling some blur effect, hover effect etc...
+
+
+
+
+
+
+

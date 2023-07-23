@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        while (true) {
+            const num1 = parseInt(prompt("Enter Any Number"));
+            const num2 = parseInt(prompt("Enter Any Number"));
+            const input = prompt("Enter Any Operator  1 for +, 2 for  - , 3 for * ,4 for  /");
+            switch (input) {
+                case 1: console.log("Addition " + (num1 + num2)); break;
+                case 2: console.log("Subtraction " + (num1 - num2)); break;
+                case 3: console.log("Multiplication " + (num1 * num2)); break;
+                case 4: console.log(`Division ${num1 / num2}`); break;
+
+                default: console.log("Enter Proper Operator")
+            }
+            const x = prompt("Enter y to continue and n to exit");
+            if(x=='y' || x=='Y'){
+                continue;
+            }else{
+                break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

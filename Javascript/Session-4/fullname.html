@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            display: block;
+            height: 30px;
+            width: 300px;
+            border-radius: 20px;
+        }
+        button{
+            margin-top: 10px;
+            display: block;
+            padding: 10px;
+            height: 50px;
+            width: 300px;
+            border-radius: 30px;
+            font-size: 20px;
+            box-sizing: border-box;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    First Name: <input type="text" id="fname" placeholder="John">
+    Last Name: <input type="text" id="lname" placeholder="Doe">
+
+    <button onclick="showFullName()">Full Name</button>
+    <h3 id="result"></h3>
+    <script>
+        function showFullName(){
+            var fname= document.getElementById("fname").value;
+            var lname= document.getElementById("lname").value;
+
+            var fullName= fname+" "+lname;
+
+            document.getElementById("result").innerHTML="Welcome "+fullName
+        }
+    </script>
+    <!-- Create One calculator Program using HTML and Javascript -->
+</body>
+</html>
