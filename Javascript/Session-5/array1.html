@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array
+        let numbers=[1,2,3,4,5,6,7,8,9];
+
+        console.log(numbers);
+        console.log(numbers[2]);
+        console.log(numbers[6]);
+        console.log(`Length of an Array: ${numbers.length}`)
+
+        //Access all the values of an array 1 by one then use Loop
+        for(let i=0; i<numbers.length;i++){
+            console.log(`Element at Index ${i} is ${numbers[i]}`)
+        }
+        //get value simple for of loop
+        for(let num of numbers){
+            if(num%2==0){
+                console.log(num)
+            }
+        }
+        for(let i in numbers){
+            if(numbers[i]%4==0){
+                console.log(numbers[i])
+            }
+        }
+    </script>
+</body>
+</html>

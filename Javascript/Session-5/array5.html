@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array= [];
+        console.log(array)
+        //store some values in my array
+        for(let i=0;i<5;i++){
+            let num= Number(prompt("Enter Any Number"));
+            array[i]=num;
+        }
+        //print array
+        console.log(array)
+
+        //find out larget element from an array
+        let large=array[0];//assume first number is larger
+        for(let x of array){
+            if(x>large){
+                large=x;
+            }
+        }
+        console.log(`Largest Number is ${large}`)
+        //Task: find out smallest number from Array
+    </script>
+</body>
+</html>

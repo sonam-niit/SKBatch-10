@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function search1(array,num){
+            let count=0;
+            for(let x of array){
+                if(x==num){
+                   count++;
+                }
+            }
+            return count;
+        }
+
+        function search(array,num){
+            for(let x of array){
+                if(x==num){
+                   return true;
+                }
+            }
+            return false;
+        }
+
+        const result= search([3,4,5,8,10,9,4],90);
+        console.log(result?"Number Found ": "Number not found")
+        const result1= search1([3,4,5,8,5,10,9,4],19);
+        if(result1>0){
+            console.log("Number found ")
+            console.log("Number of Iteration: "+result1);
+        }else{
+            console.log("Number Not found ")
+        }
+    </script>
+</body>
+</html>
