@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const count= prompt("How Many keys you want in your Object?")
+        const person={}
+
+        for(let i=1;i<=count;i++){
+
+            const key=prompt("Enter your Key name");
+            const value=prompt("Enter its value");
+            //compute property names
+            person[key]=value;
+        }
+        console.log(person);
+    </script>
+</body>
+</html>

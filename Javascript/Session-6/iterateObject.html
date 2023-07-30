@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const product={
+            name:"Pencil",
+            price:"10",
+            description:"dark, easy to use",
+            rating:4.5,
+            availabality:"23/08/2023"
+        }
+        document.write("<h1>Product Details</h1>");
+        document.write("<table border=1 cellpadding=10 cellspacing=0><tr><td>Key</td><td>Value</td>");
+        for(let key in product){
+            document.write(`<tr><td>${key}</td><td>${product[key]}</td></tr>`)
+            console.log(key+": "+ product[key]);
+        }
+        document.write("</table>")
+    </script>
+</body>
+</html>

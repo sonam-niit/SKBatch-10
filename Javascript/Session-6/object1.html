@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Simple Object Creation
+        const person = {
+            name: "sonam",
+            age: 34,
+            city: "mumbai",
+            email: "sonam@gmail.com"
+        }
+        console.log(person); //directly printing object
+        console.log(person.age); //get a perticular key value from the object
+        document.write(`<h1>Welcome ${person.name}</h1><hr>`)
+        document.write(`<h3>Details</h3><p>Age: ${person.age}<br>
+            City: ${person.city}<br>Email: ${person.email}</p>`);
+
+       // person={name:"kinjal",age:56} //constants we can't change
+
+       //We can modilfy objects
+       person.gender="female"
+       person.age=31;
+       console.log(person); //Let's print the modified objects
+
+       //let's delete now
+        delete person.age;
+        console.log(person); //Let's print the modified objects
+
+        person.password="Sonam@123";
+        console.log(person); 
+        person.phone="9874314620";
+        console.log(person['phone']);//we can access property using [] bracket
+    </script>
+</body>
+
+</html>

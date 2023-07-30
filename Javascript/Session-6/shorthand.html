@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const name=prompt("Enter Your name");
+        const age=prompt("Enter Your Age");
+        const city= prompt("Enter your city");
+        //shorthand for creating object
+        const person={
+           name,
+           age,
+           city
+        }
+
+        console.log(person);
+        document.write(`<h1>Welcome ${person.name}</h1><hr>`)
+        document.write(`<h3>Details</h3><p>Age: ${person.age}<br>
+            City: ${person.city}</p>`);
+    </script>
+</body>
+</html>

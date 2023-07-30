@@ -1,0 +1,62 @@
+Javascript Objects
+-------------------------------
+Objects are the fundamental datastructure hwich ised to store collection of key-value pairs.
+
+They are very much verstile and we can represnt any complex data using the same.
+
+const person={
+	name:"sonam",
+	age:34,
+	city:"mumbai",
+	email:"sonam@gmail.com"
+}
+
+object Methods
+------------------------------
+object can also contains methods in Javascript.
+
+const person={
+
+	name:"sonam",
+	age:34,
+	city:"mumbai",
+	greet:function(){
+		console.log(`Hello Everyone Good Evening from ${name} `)
+	}
+}
+
+
+===============================================================================
+How to iterate Object
+
+iterate object using for in loop
+
+for(key in person){
+	console.log(person[key]);
+}
+
+===================================================================
+Short Hand Operations
+-------------------------------------------------------
+if i wnat to create an object from the variables which are already declared then how to do that?
+
+Computed Property Name
+------------------------------
+you can use expressions to compute property names in object, for that you need to use square bracket
+
+const propName="Country";
+const countryName="India"
+
+const person:{
+	name:"Alex",
+	email:"alex@gmail.com",
+	[propName]:countryName
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            //member variable(properties)
+            name: "sonam",
+            age: 34,
+            city: "mumbai",
+            //functions (methods)
+            //This keyword inside the function refers object itself
+            greet:function() {
+                this.display() //call function using this keyword
+                console.log(`Hello Everyone Good Evening from ${this.name} `)
+            },
+            display:function(){
+                console.log(`Name: ${this.name} `);
+                console.log(`Age: ${this.age} `)
+                console.log(`City: ${this.city} `)
+            }
+        }
+        console.log(person);
+        person.greet();
+    </script>
+</body>
+
+</html>
