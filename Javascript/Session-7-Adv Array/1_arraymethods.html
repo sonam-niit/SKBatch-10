@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let array=[];
+        let array=new Array(); //Empty Array
+        array.push(10); //insert at last index
+        array.push(20);
+        array.push(30);
+        console.log("After Push: "+ array);
+        console.log("Removed "+ array.pop());//remove from last index
+        console.log("After Remove: "+ array);
+        array.unshift(60);//insert at first index
+        console.log("After Unshift: "+ array);
+        console.log("Removed: "+array.shift());//remove from first index
+        console.log("After Remove: "+ array);
+        //Splice
+        array.splice(1,0,30,40);
+        //1 means start from 1st index
+        //0 means dont delete any value
+        //30,40 are the new insertions
+        console.log("After Splice: "+ array);
+        console.log("Deleted: "+array.splice(2,1))//delete only 40
+        console.log("After Delete: "+ array);
+        console.log( array.splice(0,0,10,20,30,40,50));
+        console.log("After Delete: "+ array);
+    </script>
+</body>
+</html>

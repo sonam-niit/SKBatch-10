@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array=[1,2,6,3,4,5,6,7,8,9,10,6];
+
+        array.forEach(function(value,index){
+            console.log(index+" "+value);
+        });
+        //create new array from above array by multiplying all elements with 3
+        const newArray=array.map(function(value){
+            return value*3
+        })
+        console.log(newArray);
+        const evenArray= array.filter(function(ele){
+            return ele%2==0;
+        })
+        console.log(evenArray);
+        //Search an element
+        const found=array.find(function(val){
+            return val==6;
+        })
+        const foundArray=array.filter(function(val){
+            return val==6;
+        })
+        console.log(foundArray,foundArray.length);
+        console.log(found==undefined? "Not Found ":"Found Number")
+
+    </script>
+</body>
+</html>

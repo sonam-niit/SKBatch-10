@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //DB Data
+        const users=[
+            {id:1,name:"alex"},
+            {id:2,name:"bob"},
+            {id:3,name:"catty"},
+            {id:4,name:"devid"}
+        ];
+        //add new User
+        function addNewUser(user){
+            users.push(user)
+            console.log("Element Inserted Successfully");
+        }
+        //getAllUsers
+        function getAll(){
+            //iterating array and printing values in console
+            users.forEach(function(value){
+                console.log(value.id+" "+value.name)
+            })
+        }
+        //remove user
+        function removeUser(id){
+           const index= users.findIndex(function(value){
+                return value.id==id
+            });
+            if(index>=0){
+                const del=users.splice(index,1);
+                console.log("Deleted: ",del)
+            }else{
+                console.log("No user available to delete")
+            }
+        }
+
+        //Let's Do operations
+        getAll();
+        addNewUser({id:5,name:"Sonam"});
+        addNewUser({id:6,name:"Abhishek"});
+        getAll();
+        removeUser(7);
+        removeUser(5);
+        getAll();
+    </script>
+</body>
+</html>
