@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="data">
+    <button onclick="check()">Check Palindrom</button>
+    <script>
+        const array=[2,4,6,7,9,10];
+
+        const reverse=array.reverse();
+        console.log(reverse);
+        //How to check the String is Palindrom or not
+
+        function check(){
+            const str= document.getElementById("data").value;
+            const arr=str.split("")  ; //converted in Array
+            const original=arr; //copy of array to compare at last
+
+            const reverseData= arr.reverse(); //reversed array
+            if(str==(reverseData.join(""))){
+                alert("Palindrom")
+            }else{
+                alert("No palindrom")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const array=[7,8,0,4,9,3,10];
+        const sum= array.reduce(function(prevValue ,currValue){
+           // console.log(prevValue,currValue)
+            return prevValue+currValue;
+        })
+        console.log("Sum: "+sum)
+
+        const result= array.includes(60);
+        console.log(result);
+
+        const sort=array.sort(function (a,b){
+            return b-a;
+        });
+        console.log("Sorted Array: ",sort)
+
+        const students=[
+            {id:23,name:"sonam",age:34},
+            {id:13,name:"alex",age:39},
+            {id:78,name:"devid",age:15}
+        ]
+        
+        // const idSort= students.sort(function(a,b){
+        //     return a.id-b.id;
+        // })
+        // console.log("Sorted on basic of ID: ",idSort)
+        //Sorted on the basic of ID and sorting ascending
+        const nameSort= students.sort(function(a,b){
+            return b.name.localeCompare(a.name);
+        })
+        console.log("Sorted on basic of Name: ",nameSort)
+         //Sorted on the basic of Nam and sorting descending
+
+        // const ageSort= students.sort(function(a,b){
+        //     return b.age-a.age;
+        // })
+        // console.log("Sorted on basic of Age: ",ageSort)
+
+         //Sorted on the basic of Age and sorting descending
+    </script>
+</body>
+</html>

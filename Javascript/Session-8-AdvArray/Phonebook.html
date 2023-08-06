@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,button{
+            display: block;
+            height: 40px;
+            width: 50%;
+            border-radius: 20px;
+            margin: 7px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        table,th,td{
+            border: 2px solid blue;
+            margin-top: 30px;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter Name" id="name">
+    <input type="text" placeholder="Enter Phone" id="phone">
+
+    <button onclick="addPhone()">Save Phone</button>
+    <h1>Phone Book</h1>
+    <table id="book"></table>
+
+    <script>
+        let phonebook=[];//Empty Array
+        function addPhone(){
+            const name= document.getElementById("name").value;
+            const phone= document.getElementById("phone").value;
+            if(!name || !phone){
+               return alert("Name and Phone are the mandatory fields")
+            }
+            if(!(phone.length==10)){
+                return alert("Phone must be 10 digit long")
+            }
+            phonebook.push({name,phone});//pushed 1 object with name and phone
+            alert("Phone added")
+            document.getElementById("name").value=""
+            document.getElementById("phone").value=""
+            display();
+        }
+        function display(){
+            let data="<tr><th>Name</th><th>Phone</th><th>operation</th></tr>";
+            for(let p of phonebook){
+                data+= `<tr><td>${p.name}</td><td>${p.phone}</td>
+                    <td><button onclick='remove("${p.name}")'>X</button></td></tr>`
+            }
+            document.getElementById("book").innerHTML=data;  
+        }
+        function remove(name){
+            const index=phonebook.findIndex((value)=>{
+                return value.name==name;
+            })
+            phonebook.splice(index,1);
+            alert("Contact Deleted "+name)
+            display();
+        }
+
+        //Search Functionality implemented by Students
+    </script>
+</body>
+</html>
