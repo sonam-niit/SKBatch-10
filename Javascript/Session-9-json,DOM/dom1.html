@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="show()">Show Data</button>
+    <div id="id"></div>
+    <script>
+        const list = ["attendance", "check assignments", "projects", "viva"];
+
+        function show() {
+            const ul = document.createElement("ul");
+
+            list.forEach((value) => {
+                let li = document.createElement("li");
+                li.textContent = value;
+                ul.appendChild(li);
+            })
+
+            document.getElementById("id").appendChild(ul);
+        }
+
+    </script>
+</body>
+
+</html>

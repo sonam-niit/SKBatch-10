@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onmouseover="add()" onmouseleave="remove()">Hover Me</p>
+    <div id="text"></div>
+    <script>
+        function add(){
+            var div= document.querySelector("div");
+            var ele= document.createElement("p");
+            ele.textContent="You Hovered....."
+            div.appendChild(ele);
+        }
+        function remove(){
+            var div= document.querySelector("div");
+            var ele= document.querySelector("div p");
+            div.removeChild(ele);
+        }
+    </script>
+</body>
+</html>

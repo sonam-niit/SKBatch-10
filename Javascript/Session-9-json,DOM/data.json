@@ -1,0 +1,26 @@
+{
+    "users":[
+        {
+            "id":1,
+            "name":"alex",
+            "email":"alex@gmail.com"
+        },
+        {
+            "id":2,
+            "name":"bob",
+            "email":"bob@gmail.com"
+        }
+    ],
+    "posts":[
+        {
+            "id":1,
+            "user_id":2,
+            "post":"Joined Facebook Today"
+        },
+        {
+            "id":2,
+            "user_id":2,
+            "post":"happy to announce that I won award today"
+        }
+    ]
+}

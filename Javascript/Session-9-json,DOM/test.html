@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const data = {
+            "users": [
+                {
+                    "id": 1,
+                    "name": "alex",
+                    "email": "alex@gmail.com"
+                },
+                {
+                    "id": 2,
+                    "name": "bob",
+                    "email": "bob@gmail.com"
+                }
+            ],
+            "posts": [
+                {
+                    "id": 1,
+                    "user_id": 2,
+                    "post": "Joined Facebook Today"
+                },
+                {
+                    "id": 2,
+                    "user_id": 2,
+                    "post": "happy to announce that I won award today"
+                }
+            ]
+        }
+
+        const users= data.users;
+        users.forEach((value)=>{
+            console.log(value.id,value.name,value.email);
+        })
+    </script>
+</body>
+
+</html>

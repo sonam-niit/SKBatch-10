@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Query Selector Demo</h1>
+    <div>
+        <p>Paragraph1</p>
+        <p id="sec">Paragraph2</p>
+        <p class="test">Paragraph3</p>
+        <p>Paragraph4</p>
+        <p>Paragraph5</p>
+    </div>
+
+    <button onclick="change()">Change Color</button>
+    <script>
+        let para= document.querySelector("div p");
+        para.innerHTML="Welcome to My First Paragraph"
+
+        para= document.querySelector("div #sec");
+        para.innerHTML="Welcome to my Second Paragraph"
+
+        para= document.querySelector("div .test");
+        para.innerHTML="Welcome to my Third Paragraph";
+
+        function change(){
+            const colors=["red","green","blue","orange","violet"]
+           const eleArray= document.querySelectorAll("div p");
+           console.log(eleArray);
+           let i=0;
+           for(let ele of eleArray){
+                ele.style.color=colors[i];
+                i++;
+           }
+        }
+
+    </script>
+</body>
+</html>

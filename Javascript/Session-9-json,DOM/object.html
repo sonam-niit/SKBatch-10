@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let employee={
+            empId:1,
+            empName:"Sonam",
+            department:"IT",
+            salary:"345678"
+        }
+        //convert your Object into String
+        const jsonString= JSON.stringify(employee);
+        console.log(jsonString);
+
+        document.write(JSON.stringify(employee))
+        //Convert your strings into JSON Object
+        console.log(JSON.parse('{"stuId":1,"stuName":"Sonam","result":"78","college":"Engg Colg"}'));
+        
+    </script>
+</body>
+</html>
