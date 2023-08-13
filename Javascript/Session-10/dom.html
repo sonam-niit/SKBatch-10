@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+    </div>
+    <button onclick="show()">Click Me</button>
+    <button onclick="deleteMe()">Delete Node</button>
+    <script>
+        function show(){
+            const div= document.querySelector("div");
+            const p= document.createElement("h1");
+            p.textContent="Welcome to DOM Manupulation"
+            div.appendChild(p);
+        }
+        function deleteMe(){
+            const div= document.querySelector("div");
+            const pArray= document.querySelectorAll("div p");
+            div.removeChild(pArray[2]);
+        }
+    </script>
+</body>
+</html>

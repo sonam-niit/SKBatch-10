@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //cb is the parameter which is accepting function as argument
+        function calculate(cb){
+            const res=34+56;
+            console.log("Result "+res);
+
+            cb(); //calling print function after completing calculate function task
+        }
+
+        function print(){
+            console.log("Calculation Completed")
+        }
+
+        calculate(print)
+    </script>
+</body>
+</html>
