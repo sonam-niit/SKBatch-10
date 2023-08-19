@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody id="data"></tbody>
+    </table>
+    <h1>Selected User Details</h1>
+    <ul id="list"></ul>
+    <script>
+        async function fetchData() {
+            try {
+                const response = await fetch("https://jsonplaceholder.typicode.com/users");
+                if (!response.ok) {
+                    throw new Error("Network not Available")
+                }
+                const data = await response.json();
+                displayData(data);
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        fetchData();
+        function displayData(data) {
+            let mydata = ''
+            for (let x of data) {
+                mydata += `<tr><td><button onclick='showdata(${x.id})'>${x.id}</button></td>
+                        <td>${x.name}</td>
+                        <td>${x.email}</td>
+                        <td>${x.username}</td>
+                        </tr>`
+            }
+            document.getElementById("data").innerHTML = mydata;
+        }
+        function showdata(id){
+            fetchDataById(id);
+        }
+        async function fetchDataById(id) {
+            try {
+                const response = await fetch("https://jsonplaceholder.typicode.com/users/"+id);
+                if (!response.ok) {
+                    throw new Error("Network not Available")
+                }
+                const data = await response.json();
+                //console.log(data);
+                document.getElementById('list').innerHTML=`
+                <li>Address: ${data.address.street} ${data.address.suite}</li>
+                <li>Company: ${data.company.name} ${data.company.catchPhrase}</li>
+                `
+            } catch (error) {
+                console.log(error);
+            }
+        }
+    </script>
+</body>
+
+</html>

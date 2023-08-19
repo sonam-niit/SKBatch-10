@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let promise= new Promise((resolve,reject)=>{
+
+            if(23<90){
+                resolve("Success....!!!");
+            }else{
+                reject("Error....!!!!");
+            }
+        })
+
+        promise.then(function (resp){JSON.stringify(`{response:${resp}}`)})
+        .then(function(res){console.log("After Parse: ",res)})
+        .catch(function (err){console.log("Rejected: ",err)})
+
+    </script>
+</body>
+</html>

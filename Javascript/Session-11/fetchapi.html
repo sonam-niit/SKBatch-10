@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody id="data"></tbody>
+    </table>
+    <script>
+        fetch("https://jsonplaceholder.typicode.com/users")
+            .then((resp) =>{
+                if(!resp.ok){
+                    throw new Error(" Network is not available")
+                }
+                return resp.json();
+            })
+            .then((res) => {
+                let mydata = ''
+                for (let x of res) {
+                    mydata += `<tr><td>${x.id}</td>
+                        <td>${x.name}</td>
+                        <td>${x.email}</td>
+                        <td>${x.username}</td>
+                        </tr>`
+                }
+                document.getElementById("data").innerHTML = mydata;
+            })
+            .catch((err) => console.log(err))
+    </script>
+</body>
+
+</html>
