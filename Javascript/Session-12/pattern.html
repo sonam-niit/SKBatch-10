@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pattern= /hello/;
+        let pattern1= new RegExp("world");
+
+        console.log(pattern.test("hello"));
+        console.log(pattern1.test("world"));
+
+        let pat= /[A-Za-z0-9]at/;
+        console.log(pat.test("Aat"));
+        console.log(pat.test("Bat"));
+        console.log(pat.test("zat"));
+        console.log(pat.test("9at"));
+
+        let pat1= /[A-Za-z]gmail.com/;
+        console.log(pat.test("S@gmail.com"));
+        console.log(pat.test("p@gmail.com"));
+    </script>
+</body>
+</html>
