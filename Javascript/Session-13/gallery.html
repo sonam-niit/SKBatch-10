@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container" id="gallery">
+
+    </div>
+    <!-- Fetch Data From Album API -->
+    <script>
+        async function fetchPhotosData(){
+            const gallery= document.getElementById('gallery');
+            try {
+                const resp= await fetch("https://jsonplaceholder.typicode.com/photos");
+                const data= await resp.json();
+                console.log(data);
+                data.forEach((value)=>{
+                    const div=  document.createElement("div");
+                    const img= document.createElement("img");
+                    img.setAttribute('src',value.thumbnailUrl);
+                    const h4= document.createElement("h4");
+                    h4.textContent=value.title;
+                    div.appendChild(img);
+                    div.appendChild(h4);
+
+                    gallery.appendChild(div);
+                })
+
+
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        fetchPhotosData();
+    </script>
+</body>
+</html>
