@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const add= (a,b)=> a+b; //return a+b return keyword in not required
+        const mul= (a,b)=> a*b; //return a*b
+
+        const add1=(a,b)=>{
+            let num1= add(a,b);
+            let num2= mul(a,b);
+            return num1+num2; //return key word is required
+        }
+
+        console.log("Addition "+add(10,20));
+        console.log("Multiplication "+mul(2,3));
+        console.log("Advance Add "+add1(2,3));
+        //function will return function then how to write in arraw
+        const returnfun= (b)=> a-b
+        const sub= (a)=> returnfun ; 
+        const div= (a)=> (b)=> a/b;
+
+        const res1= sub(10);
+        console.log(res1);
+        console.log("Subtraction: ", res1(2));
+        console.log("division: ",div(10)(2));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var name="Sonam Soni " //global because written without any block , without any function
+
+        function myFunction() {
+            if (true) {
+                let name="Skill Academy"
+                var a = "apple";
+                let b = "ball";
+                const c = "cat";
+
+                console.log("Inside a Block Var ", a);
+                console.log("Inside a block Let ", b);
+                console.log("Inside a block Const ", c);
+                console.log("Global inside block ",name);
+            }
+            console.log("Outside a Block In a function Var ", a);
+            //below two will give you the error
+            //console.log("Outside a Block In a function ", b);
+            //console.log("Outside a Block In a function ", c);
+            console.log("Global inside function ",name);
+        }
+        myFunction();
+        //not accesibled outside the function
+       // console.log("Outside a function Var ", a);
+        console.log("Global outside function ",name);
+    </script>
+</body>
+
+</html>

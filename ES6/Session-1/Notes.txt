@@ -1,0 +1,31 @@
+ES6- Ecma Script 6 (JS version 6)
+
+has added some syntaxt changes, style of coding, new features and functions to javascript to make developers life easier.
+
+1. Block-Scope Variables
+-----------------------------------
+
+var keyword we are using for declaring the variables. which is having functional scope.
+
+so let and const introduced to create a block scope for variable
+let value we cna change whereas const we can't change( it's constant)
+
+2. Arrow Function
+----------------------------------------
+provide more concised syntax
+
+easily writing syntacx for any functions, easy to return functions and writing callbacks.
+
+3. Array Methods
+------------------------------------
+
+map : create new array
+filter: filter the array
+find: to find some element from array
+findIndex: to find the index of any element in array
+some: to check some condition and get result in boolean 
+every: to check all condition and get result in boolean
+
+
+
+
