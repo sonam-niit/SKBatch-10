@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(firstName,lastName,age){
+                this.firstName=firstName;
+                this.lastName=lastName;
+                this.age=age;
+            }
+            getFullName(){
+                return `FullName: ${this.firstName} ${this.lastName}`
+            }
+            isAdult(){
+                return this.age>=18;
+            }
+        }
+        class Student extends Person{
+            constructor(firstName,lastName,age,studentId,courses){
+                super(firstName,lastName,age);//pass these values 2 parent class constructor
+                this.studentId=studentId;
+                this.courses=courses;
+            }
+
+            enroll(courseName){
+                this.courses.push(courseName);
+            }
+            listCourses(){
+                return this.courses;
+            }
+        }
+
+        let s1= new Student('Alex','Devid',23,'S0034',['HTML','CSS']);
+        let s2= new Student('Sonam','Soni',56,'S0078',['AI','FSD']);
+
+        console.log(s1.getFullName());
+        console.log(s1.isAdult()?'Adult':'Minor');
+        console.log(s1.listCourses());
+        s1.enroll('ML');
+        console.log(s1.listCourses());
+    </script>
+</body>
+</html>

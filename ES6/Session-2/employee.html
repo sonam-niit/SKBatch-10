@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee{
+            constructor(name,designation,yoj,salary){
+                this.name=name;
+                this.designation=designation;
+                this.yoj=yoj;
+                this.salary=salary;
+            }
+            getSalary(){
+                return this.salary;
+            }
+            getAllDetails(){
+                console.log(`Name: ${this.name}`);
+                console.log(`Designation: ${this.designation}`);
+                console.log(`Year of Joining: ${this.yoj}`);
+                console.log(`Salary: ${this.salary}`);
+            }
+        }
+
+        const emp1= new Employee('Alex','Senior Developer','2021',2345678);
+        emp1.getAllDetails();
+        console.log("Get Salary of emp1: " + emp1.getSalary());
+    </script>
+</body>
+</html>

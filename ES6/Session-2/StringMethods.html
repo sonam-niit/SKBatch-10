@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="Hello World";
+        console.log("Length: ",str.length); //its property
+
+        console.log(str.charAt(4));
+        console.log(str.endsWith("World"));
+        console.log(str.startsWith('Hell'));
+        console.log(str.replace("World","Everyone"));
+
+        const array= str.split('');
+        console.log(array);
+        console.log(array.join('-'));
+        console.log(str.toLowerCase());
+        console.log(str.toUpperCase());
+
+        let str1="welcome to the world of string";
+        let array1= str1.split(' ');
+        let convertedArray=array1.map((ele)=> ele.charAt(0).toUpperCase()+ele.slice(1));
+        console.log(convertedArray);
+        console.log(convertedArray.join(" "));
+    </script>
+</body>
+</html>

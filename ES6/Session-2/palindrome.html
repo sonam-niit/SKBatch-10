@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const data= prompt("Enter any String");
+
+        const array= data.split('');
+        const reverseString =array.reverse().join('');
+
+        if(data.toLowerCase()==reverseString.toLowerCase()){
+            alert("Palindrome "+ data)
+        }else{
+            alert("Not Palindrome "+data)
+        }
+    </script>
+</body>
+</html>
