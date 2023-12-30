@@ -1,0 +1,32 @@
+
+npm i -g create-react-app
+
+create-react-app firstapp
+
+
+npm execute
+
+npx create-react-app firstapp
+cd firstapp
+code .
+Run: npm start
+localhost:3000
+
+app.jS
+-------------
+Edit and you see the diffrence
+
+JSX
+--------------Javascript Extentions
+
+we can directly include HTML code in JS
+
+
+Components
+----------------------------
+building block of React Application. Using that we can mudularize our application..
+
+We can create components in 2 ways
+
+1. Functional Components
+2. Class Component
