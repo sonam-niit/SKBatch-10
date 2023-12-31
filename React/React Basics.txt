@@ -30,3 +30,24 @@ We can create components in 2 ways
 
 1. Functional Components
 2. Class Component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

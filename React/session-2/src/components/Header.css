@@ -1,0 +1,11 @@
+.nav{
+    list-style: none;
+}
+.item{
+    display: inline;
+    padding: 20px;
+}
+.link{
+    text-decoration: none;
+    font-size: 1.3em;
+}
