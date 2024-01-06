@@ -8,6 +8,7 @@ function HomePage() {
             <hr />
             <Row title="Trending Now" type="trending"/>
             <Row title="Top Rated" type="toprated"/>
+            <Row title="Top 10" type="top10"/>
         </div>
      );
 }
