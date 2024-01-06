@@ -1,0 +1,36 @@
+{
+    "toprated":[
+        {
+            "id":1,
+            "imgURL":"https://www.digitaltrends.com/wp-content/uploads/2023/08/rK4jb2t3J98IXjY9O3nc8bX9yqt.jpg",
+            "movieName":"The Killer"
+        },
+        {
+            "id":2,
+            "imgURL":"https://www.digitaltrends.com/wp-content/uploads/2023/08/rK4jb2t3J98IXjY9O3nc8bX9yqt.jpg",
+            "movieName":"Fair Play"
+        },
+        {
+            "id":3,
+            "imgURL":"https://www.digitaltrends.com/wp-content/uploads/2023/08/rK4jb2t3J98IXjY9O3nc8bX9yqt.jpg",
+            "movieName":"The Mother"
+        }
+    ],
+    "trending":[
+        {
+            "id":1,
+            "imgURL":"https://hips.hearstapps.com/hmg-prod/images/best-movies-on-netflix-the-mother-6478b59716093.jpg?crop=1xw:1xh;center,top&resize=980:*",
+            "movieName":"The Killer"
+        },
+        {
+            "id":2,
+            "imgURL":"https://hips.hearstapps.com/hmg-prod/images/best-movies-on-netflix-the-mother-6478b59716093.jpg?crop=1xw:1xh;center,top&resize=980:*",
+            "movieName":"Fair Play"
+        },
+        {
+            "id":3,
+            "imgURL":"https://www.digitaltrends.com/wp-content/uploads/2023/08/rK4jb2t3J98IXjY9O3nc8bX9yqt.jpg",
+            "movieName":"The Mother"
+        }
+    ]
+}

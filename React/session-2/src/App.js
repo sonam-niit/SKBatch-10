@@ -18,7 +18,8 @@ function App() {
       <Userlist />
       <EffectDemo />
      {flag?<LifeCycleExample />:''}
-     <button onClick={change}>{flag?'Hide':'show'}</button>
+     <button onClick={change}>
+      {flag?'Hide':'show'}</button>
     </div>
   );
 }

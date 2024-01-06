@@ -1,0 +1,119 @@
+App.js
+-------------------
+
+we can not write all the codes in app.js
+
+so we can divide our application in small modules using components.
+
+Components: building block of the application using that we can structure our application an we can use the the same multiple time and we can make code more redable,maintable and reusable.
+
+How to create components
+-------------------------------
+Class Component 
+--------------------------
+earlier we are using, now a days we are strictly using functional components.
+
+If you want to create class component we can create class and extends React Component class and we can render the output.
+
+Functional Component
+-------------------------------
+Create simple function and use it as component.
+
+JSX
+--------------------
+Javascript XML
+
+Javascript Syntax Extention
+
+What is the Syntax ?
+---------------------------
+<h1>Hello World..! </h1>
+
+This is actually creating React Element
+
+const ele= React.createElement('h1',null,'Hello World..!'); // Tranformed Syntax
+
+
+=====================================================================================
+
+Nested Elements
+---------------------------
+JSX allows you to nest elements and you can create structure of your application
+<div>
+	<h1>
+	<h2>
+	<p>
+</div>
+
+Few Tags are self closed
+
+<img />
+<input />
+
+Closing is required for each and every element, if react is not able to find </> tag then it will give you and error.
+======================================================================================================================
+
+Conditinal Rendering we can do using JSX 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
