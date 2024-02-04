@@ -1,0 +1,26 @@
+Routing in React application is like trying to render components based on the routes
+
+eg: localhost:3000/register (Register Component)
+    localhost:3000/login (Login Component)
+
+These routes you can test directly by typing them in URL and check weather the routes are working or not.
+
+Configuring router in your React application install react-router-dom dependency
+
+>npm i react-router-dom
+
+1. <BrowserRouter>
+
+	Main tag for Implementing the router, inside this we can configure multiple routs and your components are also going to render between this browserrouter tag
+
+2. <Routes>
+
+	for creating multiple route inside the same
+
+3. <Route>
+	having 2 attributes
+	path: which path you want to create "/register"
+	element: the componnent which you want to open by clicking on this register link
+
+4. For creating Links you have to use
+	<Link> tag and use to attribute to trigger the path
