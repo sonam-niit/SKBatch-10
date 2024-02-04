@@ -20,7 +20,7 @@ const register = async (req, res) => {
         const hashPwd= await bcrypt.hash(password,10);
         const newUser = new UserModel({ name, email, password:hashPwd, username });
         const resp = await newUser.save();
-        res.send({ message: "User Created", resp })
+        res.status(201).send({ message: "User Created", resp })
     } catch (error) {
         res.send({ message: "error occured", error })
     }

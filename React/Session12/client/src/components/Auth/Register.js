@@ -1,65 +1,28 @@
-import React, { useEffect, useState } from 'react';
-function UserList() {
+import axios from 'axios';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
-    const [users,setUsers]=useState([]);
+function Register() {
     const [user,setUser]=useState({name:'',username:'',email:'',password:''});
-
-    const fetchData=async()=>{
-        try {
-           const resp= await fetch('http://localhost:5000/api/user');
-           const json= await resp.json();
-           setUsers(json);
-        } catch (error) {
-            console.log(error);
-        }
-    }
-    useEffect(()=>{
-        fetchData();
-    },[])
-
+    const navigate= useNavigate();
     const handleSubmit=async(e)=>{
         e.preventDefault();
         try {
-            const resp= await fetch("http://localhost:5000/api/user",{
-                method:'POST',
-                body:JSON.stringify(user),
-                headers:{'content-type':'application/json'}
-            })
+            const resp= await axios.post("http://localhost:5000/api/auth/register",user);
             console.log(resp);
             if(resp.status==201){
-                const data= await resp.json();
-                alert(data.message);
-                fetchData();
-                setUser({name:'',email:'',username:'',password:''})
+                toast.success(resp.data.message);
+                navigate('/login')
             }
         } catch (error) {
+            toast.error(error.response.data.message)
             console.log(error);
         }
     }
     return ( 
         <div>
-            <h3>User List</h3>
-            <table className='table table-bordered table-striped'>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Username</th>
-                        <th>Email</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        users.map((item)=>(
-                            <tr key={item._id}>
-                                <td>{item.name}</td>
-                                <td>{item.username}</td>
-                                <td>{item.email}</td>
-                            </tr>
-                        ))
-                    }
-                </tbody>
-            </table>
-            <h3>Add User</h3>
+            <h3>Registration Form</h3>
             <form onSubmit={handleSubmit}>
                 <div className='form-group mb-3'>
                     <label>Name</label>
@@ -91,4 +54,4 @@ function UserList() {
      );
 }
 
-export default UserList;
+export default Register;
